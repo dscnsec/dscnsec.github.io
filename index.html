@@ -1,396 +1,640 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="google-site-verification" content="Xnrh3wg6YzJfzAL2PfLBYDe2-LuQSJQXU5f4cABUFTM" />
-  <title>Developer Students' Club - NSEC</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/mdb.min.css" rel="stylesheet">
-  <link rel="icon" href="https://cdn-images-1.medium.com/max/1600/1*a1Sy9bAOy6vZzILhvhSYjA.png" sizes="16x16" type="image/png">
-  <link href="css/style.min.css" rel="stylesheet">
-  <style type="text/css">
-    html,
-    body,
-    header,
-    .view {
-      height: 100%;
-    }
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Developer Students' Club | NSEC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
 
-    @media (max-width: 740px) {
-      html,
-      body,
-      header,
-      .view {
-        height: 1000px;
-      }
-    }
-
-    @media (min-width: 800px) and (max-width: 850px) {
-      html,
-      body,
-      header,
-      .view {
-        height: 650px;
-      }
-    }
-    @media (min-width: 800px) and (max-width: 850px) {
-              .navbar:not(.top-nav-collapse) {
-                  background: #1C2331!important;
-              }
-          }
-    @media (min-width: 992px){
-      .navbar-expand-lg .navbar-collapse {
-    display: flex!important;
-    flex-basis: auto;
-    justify-content: flex-end;
-    }
-
-  </style>
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link href="topalert/jquery.topbar.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .blinking {
+            animation: blinkingText 1s infinite;
+        }
+        
+        @keyframes blinkingText {
+            0% {
+                color: #ff0000;
+            }
+            49% {
+                color: transparent;
+            }
+            50% {
+                color: transparent;
+            }
+            99% {
+                color: transparent;
+            }
+            100% {
+                color: #ff0000;
+            }
+        }
+    </style>
 </head>
 
-<body>
+<body class="lines" id="scrollup">
 
-  <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-    <div class="container">
+    <img src="images/p4.png" class="vx" alt="" data-enllax-ratio="-0.1" data-enllax-type="foreground" />
 
-      <!-- Brand -->
-      <a class="navbar-brand" href="#" target="_blank">
-        <strong>DSC &middot; NSEC</strong>
-      </a>
-
-      <!-- Collapse -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Links -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-
-<!--       
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" target="_blank">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" target="_blank">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" target="_blank">Contact</a>
-          </li>
-        </ul> -->
-
-        <!-- Right -->
-        <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item">
-            <a href="https://www.facebook.com/dscnsec" class="nav-link" target="_blank">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://medium.com/@dscnsec" class="nav-link" target="_blank">
-              <i class="fab fa-medium"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://github.com/dscnsec" class="nav-link border border-light rounded"
-              target="_blank">
-              <i class="fab fa-github mr-2"></i>GitHub
-            </a>
-          </li>
-        </ul>
-
-      </div>
-
+    <div class="page-loading">
+        <img src="images/loader.gif" alt="" />
+        <!-- <span>Skip Loader</span> -->
     </div>
-  </nav>
-  <!-- Navbar -->
 
-  <!-- Full Page Intro -->
-  <div class="view full-page-intro" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80'); background-repeat: no-repeat; background-size: cover;">
-
-    <!-- Mask & flexbox options-->
-    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-      <!-- Content -->
-      <div class="container">
-
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-
-          <!--Grid column-->
-          <div class="col-md-6 mb-4 white-text text-center text-md-left">
-
-            <h1 class="display-4 font-weight-bold">Developer Students&apos; Club - NSEC</h1>
-
-            <hr class="hr-light">
-
-            <p>
-              <strong>Google collaborates with university students who are passionate about growing developer communities and support them with starting student clubs on their campuses.</strong>
-            </p>
-
-            <p class="mb-4 d-none d-md-block">
-              <strong>DSC NSEC is the official Google recognized students' club at NSEC.</strong>
-            </p>
-
-            <a target="_blank" href="https://goo.gl/forms/QiRucrweRMXS8Rh22" class="btn btn-indigo btn-lg">Register Now!
-              <i class="fas fa-user ml-2"></i>
-            </a>
-
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-md-6 col-xl-5 mb-4">
-
-            <div class="card" style="background: transparent;">
-              <div class="card-body" style="display: flex; justify-content: center;">
-                <img src="https://cdn-images-1.medium.com/max/1600/1*a1Sy9bAOy6vZzILhvhSYjA.png" style="max-height: 300px;" alt="dsc-nsec-logo">
-              </div>
+    <div class="theme-layout">
+        <div class="topbar topbar-info" id="mynotification2">
+            <div class="container">We are migrating our user data. Kindly join our forum!
+                <button type="button" class="close" data-dismiss="message">&times;</button>
             </div>
-
-            
-            <!-- <div class="card">
-
-              
-              <div class="card-body">
-
-              
-                <form name="">
-               
-                  <h3 class="dark-grey-text text-center">
-                    <strong>Write to us:</strong>
-                  </h3>
-                  <hr>
-
-                  <div class="md-form">
-                    <i class="fas fa-user prefix grey-text"></i>
-                    <input type="text" id="form3" class="form-control">
-                    <label for="form3">Your name</label>
-                  </div>
-                  <div class="md-form">
-                    <i class="fas fa-envelope prefix grey-text"></i>
-                    <input type="text" id="form2" class="form-control">
-                    <label for="form2">Your email</label>
-                  </div>
-
-                  <div class="md-form">
-                    <i class="fas fa-pencil-alt prefix grey-text"></i>
-                    <textarea type="text" id="form8" class="md-textarea"></textarea>
-                    <label for="form8">Your message</label>
-                  </div>
-
-                  <div class="text-center">
-                    <button class="btn btn-indigo">Send</button>
-                    <hr>
-                  </div>
-
-                </form>
-             
-
-              </div>
-
-            </div> -->
-            <!--/.Card-->
-
-          </div>
-          <!--Grid column-->
-
         </div>
-        <!--Grid row-->
 
-      </div>
-      <!-- Content -->
+        <header class="sticktop light">
+            <div class="menusec">
+                <div class="logo">
+                    <a href="/" title=""><img src="https://raw.githubusercontent.com/dscnsec/core-images/master/PicsArt_07-24-04.03.49.png" alt="" /></a>
+                </div>
+                <div class="apps-btns">
+                    <a class="g1" href="https://forum.dscnsec.com/" title="">Login</a>
+                    <!--  <a class="g2" href="" title="">Register</a> -->
+                    <!-- <a class="g1" href="/signin" title=""></a> -->
+                    <a class="g2" href="https://forum.dscnsec.com/" title="">Register</a>
+                </div>
+                <div class="open-minimal-menu resopen">
+                    <div id="hamburger-two">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <nav id="navsc">
+                    <ul>
+                        <li><a class="smooth" href="/#two" title="">WHAT IS DSC</a></li>
+                        <li><a class="smooth" href="/#three" title="">ROADMAP</a></li>
+                        <li><a class="smooth" href="/#four" title="">TEAM</a></li>
+                        <li><a class="smooth" href="/#six" title="">FAQ</a></li>
+                        <li><a class="smooth" href="https://forum.dscnsec.com" title="">Forum</a></li>
+                        <li><a class="smooth" href="https://events.dscnsec.com" title="">Events</a></li>
+                        <li><a class="smooth" href="https://go.dscnsec.com" title="">More Links</a></li>
+
+
+                    </ul>
+
+                    <div class="apps-btns mobilap">
+                        <!-- <a href="/signin" class="g1" title="">Login</a> -->
+                        <a href="https://forum.dscnsec.com/" class="g2" title="">Join DSC NSEC</a>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+
+        <section>
+            <div class="block remove-top">
+                <div class="container fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="fsec s2">
+                                <div class="finfos wow fadeIn" data-wow-delay="0s">
+                                    <h3>Developer Students' Club <br> <strong> NSEC</strong></h3>
+                                    <p> Google collaborates with university students who are passionate about growing developer communities and support them with starting student clubs on their campuses. </p>
+
+
+                                    <ul class="btns">
+                                        <li><a class="gradient theme-btn" href="https://forum.dscnsec.com/" title="">Join DSC NSEC</a></li>
+                                        <!-- <li><a class="theme-btn blank" href="/signin" title="">Login</a></li> -->
+                                    </ul>
+                                    <div class="social">
+                                        <a href="https://www.facebook.com/dscnsec" title=""><i style="color: #4285F4;" class="fa fa-facebook"></i></a>
+
+                                        <a href="https://youtube.com/dscnsec" title=""><i style="color: #DB4437" class="fa fa-youtube"></i></a>
+                                        <a href="https://instagram.com/dscnsec" title=""><i style="color: #F4B400;" class="fa fa-instagram"></i></a>
+                                        <a href="https://github.com/dscnsec" title=""><i style="color: #4285F4;" class="fa fa-github"></i></a>
+                                        <a href="https://medium.com/@dscnsec" title=""><i style="color: #0F9D58;" class="fa fa-medium"></i></a>
+                                        <a href="https://twitter.com/dscnsec" title=""><i style="color: skyblue;" class="fa fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                                <div class="fimg animute wow fadeIn" data-wow-delay="0.2s">
+                                    <img src="images/resource/DSC-WEB.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="clsec" id="five">
+                                <!-- <div class="cl wow fadeIn" data-wow-delay="0s"> <a href="#" title=""><img src="images/resource/logo6.png" alt="" /></a> </div>
+							<div class="cl wow fadeIn" data-wow-delay="0.2s"> <a href="#" title=""><img src="images/resource/logo7.png" alt="" /></a> </div>
+							<div class="cl wow fadeIn" data-wow-delay="0.4s"> <a href="#" title=""><img src="images/resource/logo8.png" alt="" /></a> </div>
+							<div class="cl wow fadeIn" data-wow-delay="0.6s"> <a href="#" title=""><img src="images/resource/logo9.png" alt="" /></a> </div>
+							<div class="cl wow fadeIn" data-wow-delay="0.8s"> <a href="#" title=""><img src="images/resource/logo10.png" alt="" /></a> </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="winterofcode">
+            <div class="block">
+                <div class="container fluid expadding">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="fimg animute wow fadeIn" data-wow-delay="0.2s">
+                                <img src="https://imgur.com/I6HkxqT.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="wow fadeIn" data-wow-delay="0s">
+                                <h3>Winter of Code</h3>
+                                <p>Winter is nearly here and so are we! Here's presenting the Winter of Code. Winter of Code is a one-month-long programme where University students can work with open source projects. This winter, invest a month to get familiarized
+                                    with Open Source while solving the problems of organizations around you. This program aims to train you for the global program of Google Summer of Code and sets you up with its challenges. We welcome aboard the smartest
+                                    minds and the hardest working people. In the end, we have loads of goodies for you :D
+                                </p>
+                                <p>
+                                    <ul class="btns">
+                                        <li><a class="gradient theme-btn g1" href="http://www.winterofcode.com/" title="" target="_blank">More Info</a></li>
+                                        <li><a class="theme-btn blank g2" href="https://docs.google.com/forms/d/1sIW-XxDgWRpaZjL5W5Pz_NkQ3k8MUumUc9UbVSCeBb0/viewform?edit_requested=true" target="_blank" title="">Apply as an Organisation</a></li>
+
+                                    </ul>
+
+
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <section id="one">
+            <div class="block">
+                <div class="container fluid expadding">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="why-info wow fadeIn" data-wow-delay="0s">
+                                <h3>Why DSC?</h3>
+                                <p>Developer Students Club-NSEC is a Google recognized student body at NSEC which directly reports to Google Developers for their activities and is supported by the tech giant.
+
+
+                                </p>
+                                <p>DSC-NSEC conducts workshops, seminars and other fun activities which help the students connect with Google.
+                                </p>
+                                <!-- <a class="fancybtn" href="http://youtu.be/SSo_EIwHSd4" title="">
+								<span class="pulse"><img src="images/icon5.png" alt="" /></span>
+								<strong>Watch Video</strong><br />
+								<i>What and How it work</i>
+							</a> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="sersec">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="ser wow fadeIn" data-wow-delay="0s">
+                                            <img src="images/icon1.png" alt="" />
+                                            <p>Collaborate</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="ser wow fadeIn" data-wow-delay="0.2s">
+                                            <img src="images/icon2.png" alt="" />
+                                            <p>Warm Community</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="ser wow fadeIn" data-wow-delay="0.4s">
+                                            <img src="images/icon3.png" alt="" />
+                                            <p>Connect</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="ser wow fadeIn" data-wow-delay="0.6s">
+                                            <img src="images/icon4.png" alt="" />
+                                            <p>Professionalism</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="two">
+            <div class="block">
+                <div class="container expadding fluid">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="tokenfesec s2">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn" data-wow-delay="0.2s">
+                                        <div class="tkenf tc1  floating">
+                                            <img src="images/icon6.png" alt="" />
+                                            <span>Web<br>Development</span>
+                                        </div>
+                                        <div class="tkenf tc4   floating">
+                                            <img src="images/icon9.png" alt="" />
+                                            <span>Mobile<br>Applications</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn" data-wow-delay="0.4s">
+                                        <div class="tkenf tc2  martop1  floating">
+                                            <img src="images/icon7.png" alt="" />
+                                            <span>Machine<br>Learning</span>
+                                        </div>
+                                        <div class="tkenf tc3  martop1  floating">
+                                            <img src="images/icon8.png" alt="" />
+                                            <span>Cloud<br>Computing</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn" data-wow-delay="0.10s">
+                                        <div class="tkenf tc5  martop2  floating">
+                                            <img src="images/icon10.png" alt="" />
+                                            <span>Artificial<br>Intelligence</span>
+                                        </div>
+                                        <div class="tkenf tc6  martop2  floating">
+                                            <img src="images/icon11.png" alt="" />
+                                            <span>UI/UX<br>Designing</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="whytoken s2">
+                                <h3 class=" wow fadeIn" data-wow-delay="0s">What is DSC?</h3>
+                                <p class=" wow fadeIn" data-wow-delay="0.2s">A Developer Students Club is a Google recognized student body at a college which directly reports to Google for their activities and is supported by the tech giant. A DSC conducts workshops, seminars and other fun activities
+                                    which help the students connect with Google.</p>
+                                <p class=" wow fadeIn" data-wow-delay="0.4s">And we give Google interview referrals too! </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section>
+            <div class="block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="distisec">
+                                <h3>Unity in Diversity</h3>
+                                <div class="chartsec">
+                                    <div class="chart-img wow flash"></div>
+                                    <div class="charttip one wow fadeInLeft" data-wow-delay="0s"><span>14%</span>
+                                        <p>ECE</p>
+                                    </div>
+                                    <div class="charttip two wow fadeInLeft" data-wow-delay="0.2s"><span>15%</span>
+                                        <p>AEIE</p>
+                                    </div>
+                                    <div class="charttip three wow fadeInLeft" data-wow-delay="0.4s"><span>30%</span>
+                                        <p>IT</p>
+                                    </div>
+                                    <div class="charttip flip four wow fadeInRight" data-wow-delay="0.6s"><span>40%</span>
+                                        <p>CSE</p>
+                                    </div>
+                                    <div class="charttip flip five wow fadeInRight" data-wow-delay="0.8s"><span>5%</span>
+                                        <p>CE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 	<section>
+		<div class="block">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="distisec">
+							<h3>Use Of Proceeds</h3>
+							<div class="chartproceed">
+								<div class="chartproceed-img wow fadeInLeft"><img  src="images/chart.png" alt="" /></div>
+								<div class="chartsinfo">
+									<span class="wow fadeInUp" data-wow-delay="0s"><i class="clr1"></i>25% Branding and Marketing</span>
+									<span class="wow fadeInUp" data-wow-delay="0.2s"><i class="clr2"></i>20% Gift Code Invemtory</span>
+									<span class="wow fadeInUp" data-wow-delay="0.4s"><i class="clr3"></i>20% Legal & Financial Overhead</span>
+									<span class="wow fadeInUp" data-wow-delay="0.6s"><i class="clr4"></i>15% IT Infastructure</span>
+									<span class="wow fadeInUp" data-wow-delay="0.8s"><i  class="clr5"></i>10% Bounty & Overhead</span>
+									<span class="wow fadeInUp" data-wow-delay="0.10s"><i class="clr6"></i>5% Management</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+        <!-- <section id="three">
+            <div class="block">
+                <div data-velocity="-.1" style="background: url(images/p3.png) repeat scroll 50% 422.28px transparent;" class="parallax scrolly-invisible"></div>
+                <!-- PARALLAX BACKGROUND IMAGE -->
+        <!-- <div class="container fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="roadmapsec">
+                                <h3>Road Map</h3>
+                                <div class="roadnavsec">
+                                    <ul class="roadnav">
+                                        <li><span>2019</span></li>
+                                        <li><span>2018</span></li>
+                                        <li><span>2017</span></li>
+                                        <li><span>2023</span></li>
+                                        <li><span>2022</span></li>
+                                        <li><span>2021</span></li>
+                                        <li><span>2020 </span></li>
+                                    </ul>
+                                </div>
+                                <ul class="roadcontent">
+                                    <li>
+                                        <div class="rmcontent">
+                                            <div class="roadmap wow fadeInUp" data-wow-delay="0s"><i class="cl1"></i>
+                                                <h3>February 2019</h3>
+                                                <p>GCDC Kolkata Cloud Study Jam</p>
+                                            </div>
+                                            <!-- RoadMap -->
+        <!-- <div class="roadmap wow fadeInUp" data-wow-delay="0.2s"><i class="cl2"></i>
+                                                <h3>March 2019</h3>
+                                                <p>1. Intel International Women’s Day celebration <br> 2. WTM Kolkata International Women’s Day Celebration <br> 3. TensorFlow Dev Summit</p>
+                                            </div>
+                                            <!-- RoadMap -->
+        <!-- <div class="roadmap wow fadeInUp" data-wow-delay="0.4s"><i class="cl3"></i>
+                                                <h3>April 2019</h3>
+                                                <p>1. DSC Solution Challenge <br> 2. Cloud Study Jam, Academy of Technology</p>
+                                            </div> -->
+        <!-- RoadMap -->
+        <!-- <div class="roadmap wow fadeInUp" data-wow-delay="0.6s"><i class="cl4"></i>
+                                                <h3>August 2019</h3>
+                                                <p>1. DevFest’19</p>
+                                            </div> -->
+        <!-- RoadMap -->
+        <!-- <div class="roadmap wow fadeInUp" data-wow-delay="0.8s"><i class="cl5"></i>
+                                                <h3>September 2019</h3>
+                                                <p>1. DSC NSEC CloudFest (upcoming)</p>
+                                                <p>2. Workshops & <br> Live Sessions</p>
+                                            </div> -->
+        <!-- RoadMap -->
+        <!-- </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  -->
+
+        <section id="four">
+            <div class="block teamline">
+                <div data-velocity="-.2" style="background: url(images/resource/p2.jpg) repeat scroll 50% 422.28px transparent;" class="parallax  scrolly-invisible"></div>
+                <!-- PARALLAX BACKGROUND IMAGE -->
+                <div class="container fluid expadding noright">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="teaminfos wow fadeIn">
+                                <h3>Team</h3>
+                                <p>None of us, including me, ever do great things. But we can all do small things, with great love, and together we can do something wonderful.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="teamlist">
+                                <ul class="teamcarousel">
+                                    <li>
+                                        <div class="team wow fadeIn" data-wow-delay="0s">
+                                            <img src="https://raw.githubusercontent.com/dscnsec/core-images/master/it_saurav.jpg" alt="" />
+                                            <h3>Sourav Mitra</h3>
+                                            <span>Faculty Mentor(Dept. of IT)</span>
+                                            <div class="social">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                            </div>
+                                        </div>
+                                        <!-- Team -->
+                                    </li>
+                                    <li>
+                                        <div class="team wow fadeIn" data-wow-delay="0.2s">
+                                            <img src="https://raw.githubusercontent.com/dscnsec/core-images/master/AnubhavSingh.jpg" alt="" />
+                                            <h3>Anubhav Singh</h3>
+                                            <span>DSC Lead</span>
+                                            <div class="social">
+                                                <a href="https://facebook.com/xprilion"><i class="fa fa-facebook"></i></a>
+                                                <a href="https://linkedin.com/in/xprilion"><i class="fa fa-linkedin"></i></a>
+                                                <a href="https://twitter.com/xprilion"><i class="fa fa-twitter"></i></a>
+                                            </div>
+                                        </div>
+                                        <!-- Team -->
+                                    </li>
+                                    <li>
+                                        <div class="team wow fadeIn" data-wow-delay="0.4s">
+                                            <img src="https://raw.githubusercontent.com/dscnsec/core-images/master/ani4aniket.jpeg" alt="" />
+                                            <h3>Aniket Kumar</h3>
+                                            <span>Web Facilitator</span>
+                                            <div class="social">
+                                                <a href="https://facebook.com/ani4aniket"><i class="fa fa-facebook"></i></a>
+                                                <a href="https://linkedin.com/in/aniketkumar049"><i class="fa fa-linkedin"></i></a>
+                                                <a href="https://twitter.com/aniketkumar__"><i class="fa fa-twitter"></i></a>
+                                            </div>
+                                        </div>
+                                        <!-- Team -->
+                                    </li>
+                                    <li>
+                                        <div class="team wow fadeIn" data-wow-delay="0.6s">
+                                            <img src="https://raw.githubusercontent.com/dscnsec/core-images/master/AnuragSingh.jpg" alt="" />
+                                            <h3>Anurag Singh</h3>
+                                            <span>Web Facilitator</span>
+                                            <div class="social">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                            </div>
+                                        </div>
+                                        <!-- Team -->
+                                    </li>
+                                    <li>
+                                        <div class="team wow fadeIn" data-wow-delay="0.8s">
+                                            <img src="https://raw.githubusercontent.com/dscnsec/core-images/master/Shahid.jpg" alt="" />
+                                            <h3>Md. Shahid</h3>
+                                            <span>Event Reporter</span>
+                                            <div class="social">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                            </div>
+                                        </div>
+                                        <!-- Team -->
+                                    </li>
+                                    <li>
+                                        <div class="team wow fadeIn" data-wow-delay="0.8s">
+                                            <img src="https://raw.githubusercontent.com/dscnsec/core-images/master/0faf3958-f423-422d-b7b8-5827e7e471f9.jpeg" alt="" />
+                                            <h3>Ankit Mishra</h3>
+                                            <span>Treasurer</span>
+                                            <div class="social">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                            </div>
+                                        </div>
+                                        <!-- Team -->
+                                    </li>
+                                    <li>
+                                        <div class="team wow fadeIn" data-wow-delay="0.8s">
+                                            <img style="opacity: 0" src="https://raw.githubusercontent.com/dscnsec/core-images/master/0faf3958-f423-422d-b7b8-5827e7e471f9.jpeg" alt="" />
+                                            <div style=" position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%, -50%);">
+
+                                                <a href="/team" style="color: white">More...</a></div>
+                                            <h3>&nbsp;</h3>
+                                            <span>&nbsp;</span>
+                                            <!-- <div class="social">
+                        <a href="#"><i class=""></i></a>
+                        <a href="#"><i class=""></i></a>
+                        <a href="#"><i class=""></i></a>
+                      </div> -->
+                                        </div>
+                                        <!-- Team -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="six">
+            <div class="block">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <div class="faqsec">
+                                <h3>Frequently Asked Questions</h3>
+                                <div id="toggle-widget" class="experties">
+                                    <h2 class="wow fadeInUp" data-wow-delay="0s">What is DSC?</h2>
+                                    <div class="content">
+                                        <p>Developer Students’ Club is a Google Developers program for university students, designed to help them build their development skills in various domains. It is an officially recognized Students’ Club.</p>
+                                    </div>
+                                    <h2 class="wow fadeInUp" data-wow-delay="0.4s">What do we do?</h2>
+                                    <div class="content">
+                                        <p>Developer Students Club-NSEC is a Google recognized student body at NSEC which directly reports to Google Developers for their activities and is supported by the tech giant. DSC-NSEC conducts workshops, seminars
+                                            and other fun activities which help the students connect with Google. And we give Google interview referrals too!
+                                        </p>
+                                    </div>
+                                    <h2 class="wow fadeInUp" data-wow-delay="0.6s">How can I be a part?</h2>
+                                    <div class="content">
+                                        <p>Just register in our website and its completely free of cost. </p>
+                                    </div>
+                                    <h2 class="wow fadeInUp" data-wow-delay="0.8s">Is this for girls?</h2>
+                                    <div class="content">
+                                        <p>One-fourth of the total members in the club are girls who are working efficiently alongside their male counterparts. </p>
+                                    </div>
+                                    <h2 class="wow fadeInUp" data-wow-delay="0.10s">When I should apply?</h2>
+                                    <div class="content">
+                                        <p>It is always better to start early so that you can get an edge over others.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="seven">
+            <div class="block remove-bottom gray">
+                <div class="container fluid expadding">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="contactsec">
+                                <h3>Contact</h3>
+                                <div class="consec">
+                                    <div class="contactlists">
+                                        <span class="wow fadeIn" data-wow-delay="0s"><strong><img src="images/icon12.png" alt="" /></strong><i>Netaji Subhash Engineering College <br>Garia, Kolkata 700152</i></span>
+                                        <!-- <span class="wow fadeIn" data-wow-delay="0.2s"><strong><img src="images/icon13.png" alt="" /></strong><i>Call us <br>+91 7003944046</i></span> -->
+                                        <span class="wow fadeIn" data-wow-delay="0.4s"><strong><img src="images/icon14.png" alt="" /></strong><i>Email <br><a mailto="lead@dscnsec.com" class="__cf_email__">lead@dscnsec.com</a></i></span>
+                                        <div class="social wow fadeInUp">
+                                            <a href="https://youtube.com/dscnsec" title=""><i style="color: #DB4437" class="fa fa-youtube"></i></a>
+                                            <a href="https://instagram.com/dscnsec" title=""><i style="color: #F4B400;" class="fa fa-instagram"></i></a>
+                                            <a href="https://github.com/dscnsec" title=""><i style="color: #4285F4;" class="fa fa-github"></i></a>
+                                            <a href="https://medium.com/@dscnsec" title=""><i style="color: #0F9D58;" class="fa fa-medium"></i></a>
+                                            <a href="https://twitter.com/dscnsec" title=""><i style="color: skyblue;" class="fa fa-twitter"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="contactformsec wow fadeIn" id="contact">
+                                        <div id="message"></div>
+                                        <form method="post" action="#" name="contactform" id="contactform">
+                                            <input name="name" type="text" id="name" placeholder="Your Name" />
+                                            <input name="email" type="text" id="email" placeholder="Your Email" />
+                                            <textarea name="comments" id="comments" placeholder="Your Message"></textarea>
+                                            <button id="submit" type="submit" class="theme-btn gradient">Send Message</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottomline">
+                    <div class="scrollup"><a href="#scrollup" title="">Scroll Up</a></div>
+                    <span>Designed & Developed by <a href="https://ianiket.me">ANiKET</a></span>
+                </div>
+            </div>
+        </section>
 
     </div>
-    <!-- Mask & flexbox options-->
 
-  </div>
-  <!-- Full Page Intro -->
+    <script>
+        $(function() {
 
-  <!--Main layout-->
-  <main>
-    <div class="container">
+            $("#mynotification2").topBar({
+                slide: false
+            });
 
-      <!--Section: Main info-->
-      <section class="mt-5 wow fadeIn">
-
-        <!--Grid row-->
-        <div class="row">
-
-          <!--Grid column-->
-          <div class="col-md-6 mb-4">
-
-            <img src="https://cdn-images-1.medium.com/max/800/1*fDv4ftmFy4VkJmMR7VQmEA.png" class="img-fluid z-depth-1-half" alt="Developer Students Club">
-
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-md-6 mb-4">
-
-            <!-- Main heading -->
-            <h3 class="h3 mb-3">What is DSC?</h3>
-            <p>A Developer Students Club is a Google recogznied student body at a college which directly reports to Google for their activities and is supported by the tech giant.</p>
-            <p>A DSC conducts workshops, seminars and other fun activities which help the students connect with Google.</p>
-            <!-- Main heading -->
-
-            <hr>
-            
-            <p> And we give Google interview referrals too! </p>
-<!-- 
-            <p>
-              <strong>100+</strong> student developers,
-              <strong>10+</strong> workshops,
-              <strong>10+</strong> events,
-              <strong>50+</strong> projects and many more.
-            </p> -->
-
-          </div>
-          <!--Grid column-->
-
-        </div>
-        <!--Grid row-->
-
-      </section>
-      <!--Section: Main info-->
-
-      <hr class="my-5">
-
-      <!--Section: Main features & Quick Start-->
-      <section>
-
-        <h3 class="h3 text-center mb-5">About DSC</h3>
-
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12 px-4">
-
-            <!--First row-->
-            <div class="row">
-              <div class="col-1 mr-3">
-                <i class="fas fa-code fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Code</h5>
-                <p class="grey-text"> We help you learn to code, and grow as a developer.</p>
-              </div>
-            </div>
-            <!--/First row-->
-
-            <div style="height:30px"></div>
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-1 mr-3">
-                <i class="fas fa-book fa-2x blue-text"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Blogs</h5>
-                <p class="grey-text"> We teach you how to use different Google technologies to create your next big project!
-                </p>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <div style="height:30px"></div>
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-1 mr-3">
-                <i class="fas fa-graduation-cap fa-2x cyan-text"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Workshops</h5>
-                <p class="grey-text"> We provide high quality, hands-on training for everyone ranging from noob to pro!</p>
-              </div>
-            </div>
-            <!--/Third row-->
-
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-           <div class="col-md-6 mb-4">
-
-            <img src="img/dsc-nsec-logo.png" class="img-fluid z-depth-1-half" alt="DSC NSEC">
-
-          </div>
-          <!--/Grid column-->
-
-        </div>
-        <!--/Grid row-->
-
-      </section>
-      <!--Section: Main features & Quick Start-->
-
-      <hr class="my-5">
-
-      <!--Section: Not enough-->
-      
-  </main>
-  <!--Main layout-->
-
-  <!--Footer-->
-  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+        });
+    </script>
+    <script src="topalert/jquery.topbar.js"></script>
 
 
-    <hr class="my-4">
 
-    <!-- Social icons -->
-    <div class="pb-4">
-      <a href="https://www.facebook.com/dscnsec" target="_blank">
-        <i class="fab fa-facebook-f mr-3"></i>
-      </a>
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/modernizr.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/wow.min.js" type="text/javascript"></script>
+    <script src="js/slick.min.js" type="text/javascript"></script>
+    <script src="js/scrolly.js" type="text/javascript"></script>
+    <script src="js/countdown.js" type="text/javascript"></script>
+    <script src="js/mouse.js" type="text/javascript"></script>
+    <script src="js/3d.js" type="text/javascript"></script>
+    <script src="js/enllax.js" type="text/javascript"></script>
+    <script src="js/poptrox.js" type="text/javascript"></script>
+    <script src="js/scrollnav.js" type="text/javascript"></script>
+    <script src="js/scrollup.js" type="text/javascript"></script>
+    <script data-ad-client="ca-pub-9933940724998991" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-      <a href="https://github.com/dscnsec" target="_blank">
-        <i class="fab fa-github mr-3"></i>
-      </a>
-
-      <a href="https://medium.com/@dscnsec" target="_blank">
-        <i class="fab fa-medium mr-3"></i>
-      </a>
-    </div>
-    <!-- Social icons -->
-
-    <!--Copyright-->
-    <div class="footer-copyright py-3">
-      Designed By 
-      <a href="https://ianiket.me">ANiKET</a>
-      © 2019 Copyright:
-      <a href="#" target="_blank"> DSC - NSEC </a>
-    </div>
-    <!--/.Copyright-->
-
-  </footer>
-  <!--/.Footer-->
-
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Initializations -->
-  <script type="text/javascript">
-    // Animations initialization
-    new WOW().init();
-  </script>
 </body>
+
 
 </html>
